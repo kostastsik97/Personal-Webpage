@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/83c9253b0c.js" crossorigin="anonymous"></script>
+</head>
+<body> 
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+
+                </ul>
+
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Junior Web Developer</p>
+                <h1>Welcome to <br>my <span>Portfolio-Website</span></h1>
+
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------------ABOUT----------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Welcome to my website! I'm a passionate and dedicated junior web developer eager 
+                        to kickstart my career in the tech industry. With a strong foundation in HTML, CSS, and JavaScript, 
+                        I am committed to creating responsive and user-friendly websites. I thrive on learning new technologies 
+                        and continuously improving my skills to deliver high-quality projects. Whether it's front-end design or back-end functionality, 
+                        I am excited to bring innovative ideas to life and contribute to dynamic web solutions. Thank you for visiting!</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('expirience')">Expirience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Front end Developer</span><br>Design Websites with Html , CSS , JavaScript </li>
+                                <li><span>Teamwork</span><br>Ability to collaborate with designers, project managers, and other developers.</li>
+                                <li><span>Problem-Solving</span><br>Analytical thinking to identify issues and find efficient solutions.</li>
+                                <li><span>Time Management</span><br>Prioritization of tasks to meet deadlines</li>
+                                <li><span>Continuous Learner</span><br>Commitment to personal and professional growth.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="expirience">
+                            <ul>
+                                <li><span>1-12-2023/31-5-2024</span><br>Intership in MultiApp Solutions as Web desinger</li>
+                                <li><span>2-2-2021/Current</span><br>Head-Bartender in Jasmine the yard of senses in Heraklion</li>
+                                <li><span>12-1-2020/2021</span><br>Bartender in Tucan Heraklion</li>
+                                <li><span>1-1-2018/2020</span><br>Bartender in Xalavro Open Bar</li>
+                               
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2024</span><br>FreeCodeCamp Certifications - Responsive Website</li>
+                                <li><span>2024</span><br>FreeCodeCamp Certifications - Javascript</li>
+                                <li><span>2022-2023</span><br>IEK AKMI- Web and Game Developer</li>
+
+                               
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-----------------------------Services------------------->
+    <div id="services">
+         <div class="container">
+            <h1 class="sub-title">My Services</h1>
+             <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Website Design: Crafting visually appealing and user-friendly layouts.
+                        Responsive Design: Optimizing for various devices.
+                        UX Design: Enhancing user satisfaction and usability.
+                        Graphic Design: Creating logos, icons, and banners.
+                        CMS Integration: Implementing systems like WordPress for easy content management.
+                        E-commerce Solutions: Designing online stores with secure transactions.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-wordpress"></i>
+                     <h2>WordPress</h2>
+                    <p>Theme Development: Creating and customizing themes to meet client specifications.
+                        Plugin Development: Developing and modifying plugins to extend website functionality.
+                        Website Maintenance: Performing regular updates, backups, and security checks.
+                        Content Management: Assisting with content updates and management using the WordPress CMS.
+                        Troubleshooting: Identifying and resolving website issues and bugs.</p>
+                    <a href="#">Learn More</a>
+                 </div>
+                      <div>
+                        <i class="fa-solid fa-database"></i>
+                        <h2>Data Bases</h2>
+                        <p>Database Design: Structuring databases to meet user requirements.
+                            Maintenance: Performing regular backups and updates.
+                            Security: Implementing measures to protect data integrity and security.
+                            Optimization: Ensuring efficient database performance.
+                            Troubleshooting: Identifying and resolving database issues.</p>
+                        <a href="#">Learn More</a>
+                      </div>
+                    </div>
+                </div>
+             </div>
+
+         </div>
+    </div>
+
+    <!--------------------------Portfolio----------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work1.png" >
+                    <div class="layer">
+                        <h3>Cretan Escapes</h3>
+                        <p>Discover amazing tours at exclusive deals.</p>
+                        <a href="https://www.cretanescapes.com/"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work3.png" >
+                    <div class="layer">
+                        <h3>IONOS </h3>
+                        <p>IONOS Drones bring the feauture</p>
+                        <a href="https://www.ionos.com.gr/"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                </div>
+                <div class="work">
+                    <img src="images/work2.png" >
+                    <div class="layer">
+                        <h3>Personal Web Page </h3>
+                        <p>This one !</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                 </div>
+                 <a href="#" class="btn">See More</a>
+            </div>
+        </div>
+   
+<!-----------------------Contact--------------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title"> Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> konstantinostsikalas@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 6947227002</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/kostas.tsikalas"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/kostas_tsik/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/%CE%BAostas-tsikalas-475310265/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright   <i class="fa-solid fa-copyright"></i>  Konstantinos Tsikalas </p>
+    </div>
+</div>
+
+
+
+
+
+    <script>
+
+
+        var tablinks= document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for (tablink of tablinks ){
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents ){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxmXGP_UQHQ5kNJ6Pz1gY5INpRb1UDnyybJ8cScVURnlkLBS1kEKlzlpa39OPLIZmt4Uw/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
